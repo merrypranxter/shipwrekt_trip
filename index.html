@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="en" data-signal-density="feral" data-haunt="on">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#100818">
+  <meta name="description" content="SHIPWREKT: Merry's interactive archive of one unusually powerful mushroom trip—silence, living geometry, the Operator and Avatar, clowntech, memory, and the Holy Glitch.">
+  <meta property="og:title" content="SHIPWREKT — the trip that became an operating system">
+  <meta property="og:description" content="A personal psychedelic field report rendered as a living, navigable cosmology.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/source-art/vibrational-emitters-manual.png">
+  <title>SHIPWREKT — a personal trip cosmology</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (() => {
+      const key = 'shipwrekt:symbiosis:v1';
+      const allowed = new Set(['quiet', 'luminous', 'feral']);
+      try {
+        const saved = JSON.parse(localStorage.getItem(key));
+        if (saved?.version === 1 && saved?.kind === 'signal-density' && allowed.has(saved.value)) {
+          document.documentElement.dataset.signalDensity = saved.value;
+        }
+      } catch (_) { /* The complete default does not depend on storage. */ }
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip directly into the signal</a>
+
+  <canvas class="signal-field" id="signal-field" aria-hidden="true"></canvas>
+  <div class="fallback-field" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="signal-progress" id="signal-progress" aria-hidden="true"></div>
+
+  <header class="site-header" data-root-nav>
+    <a class="wordmark" href="#threshold" aria-label="Shipwrekt, back to the threshold">
+      <span class="wordmark__mark" aria-hidden="true">✣</span>
+      <span>SHIPWREKT</span>
+    </a>
+
+    <nav class="root-nav" aria-label="Primary roots">
+      <a href="#field-map">Map</a>
+      <a href="#silence">Trip</a>
+      <a href="#source-vault">Sources</a>
+      <a href="#tune-the-field">Intensity</a>
+    </nav>
+
+    <div class="session-trail" aria-label="Your current path through this visit">
+      <span class="session-trail__label">trail</span>
+      <ol id="session-trail">
+        <li><a href="#threshold">threshold</a></li>
+      </ol>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="threshold trip-node" id="threshold" data-node="threshold" data-zone="0">
+      <div class="threshold__signal" aria-hidden="true">
+        <div class="metaform">
+          <span class="metaform__plane metaform__plane--a"></span>
+          <span class="metaform__plane metaform__plane--b"></span>
+          <span class="metaform__plane metaform__plane--c"></span>
+          <span class="metaform__core"></span>
+          <span class="watch-node"></span>
+        </div>
+        <p class="threshold__telemetry">SOURCEOS // HANDSHAKE UNRESOLVED // BEAUTIFUL ANYWAY</p>
+      </div>
+
+      <div class="threshold__copy">
+        <p class="kicker">A personal mushroom-trip cosmology · one night · many operating systems</p>
+        <h1 aria-label="Shipwrekt">
+          <span aria-hidden="true" data-echo="SHIP">SHIP</span><span aria-hidden="true" data-echo="WREKT">WREKT</span>
+        </h1>
+        <p class="threshold__lede">
+          Shipwrekt was what we called the mushrooms—possibly little aborts, definitely weird,
+          brutally strong, and fantastic. This is what happened when the internal noise vanished
+          and the trip unfolded into a whole damn cosmology.
+        </p>
+        <p class="not-nautical"><span aria-hidden="true">⚠</span> The name is the strain. There are no boats in this universe.</p>
+        <div class="threshold__actions">
+          <a class="breach-button" href="#field-map" data-breach-button>
+            <span class="breach-button__face">Enter the signal</span>
+          </a>
+          <a class="text-link" href="#position-note">Read the reality anchor</a>
+        </div>
+      </div>
+
+      <div class="threshold__coordinates" aria-hidden="true">
+        <span>NO DOSE RECORDED</span>
+        <span>CHRONOLOGY: RECONSTRUCTED BY MEANING</span>
+        <span>STATUS: STILL GLITCHING</span>
+      </div>
+    </section>
+
+    <aside class="position-note glass-organ" id="position-note" aria-labelledby="position-note-title">
+      <p class="micro-label">reality anchor / please keep one foot in meatspace</p>
+      <h2 id="position-note-title">This is a field report, not a physics textbook.</h2>
+      <p>
+        The site preserves the experience in its own symbolic language: SourceOS, living geometry,
+        Indra’s Net, voltage, glitches, and dimensional architecture. Those are phenomenology and
+        personal cosmology here—not verified scientific claims, diagnosis, medical advice, or a guide
+        for taking drugs. The weirdness is real as an experience; the interpretation remains an interpretation.
+      </p>
+    </aside>
+
+    <section class="map-habitat trip-node" id="field-map" data-node="field-map" data-zone="1" aria-labelledby="field-map-title">
+      <header class="section-intro">
+        <p class="kicker">The hidden root system</p>
+        <h2 id="field-map-title">The trip did not happen in chapters. It fruited in connections.</h2>
+        <p>
+          Choose a signal family. The ordinary list is the real navigation; the living map is its
+          excitable nervous tissue. Every line means something specific—no fraudulent fungal astrology.
+        </p>
+      </header>
+
+      <form class="field-filter" id="field-filter" aria-describedby="filter-explanation">
+        <fieldset>
+          <legend>Tune the visible neighborhood</legend>
+          <label><input type="radio" name="field" value="all" checked> Whole organism</label>
+          <label><input type="radio" name="field" value="perception"> Perception</label>
+          <label><input type="radio" name="field" value="embodiment"> Embodiment</label>
+          <label><input type="radio" name="field" value="transmission"> Transmission</label>
+          <label><input type="radio" name="field" value="memory"> Memory</label>
+        </fieldset>
+        <p id="filter-explanation">Filtering changes emphasis, not access. Every node remains available in the index.</p>
+        <p class="filter-status" id="filter-status" role="status" aria-live="polite">Eight nodes in the field.</p>
+      </form>
+
+      <div class="concept-map-shell glass-organ">
+        <svg class="concept-map" id="concept-map" viewBox="0 0 1000 620" aria-hidden="true" focusable="false"></svg>
+        <div class="concept-map__void" aria-hidden="true">
+          <span>THE MAP IS ALSO BEING MAPPED</span>
+        </div>
+      </div>
+
+      <ol class="spore-index" id="spore-index" aria-label="Complete concept index">
+        <li class="spore-card" data-map-node="silence" data-cluster="perception">
+          <article class="spore-card__body">
+            <p class="spore-card__species">01 · source baseline</p>
+            <h3><a href="#silence" data-node-target="silence">The Silence Event</a></h3>
+            <p>The inner monologue did not quiet down. It was annihilated.</p>
+            <p class="spore-card__tendril">Grows into: Operator / Avatar split</p>
+          </article>
+        </li>
+        <li class="spore-card" data-map-node="split" data-cluster="embodiment">
+          <article class="spore-card__body">
+            <p class="spore-card__species">02 · dual boot</p>
+            <h3><a href="#split" data-node-target="split">Operator / Avatar</a></h3>
+            <p>“I am not her. But she is mine.” Detachment becomes stewardship.</p>
+            <p class="spore-card__tendril">Shares tissue with: Stuffness</p>
+          </article>
+        </li>
+        <li class="spore-card" data-map-node="geometry" data-cluster="perception">
+          <article class="spore-card__body">
+            <p class="spore-card__species">03 · native syntax</p>
+            <h3><a href="#geometry" data-node-target="geometry">The Tetragrammaton</a></h3>
+            <p>A living metaform: sphere, cube, more-whatever, eating and birthing itself.</p>
+            <p class="spore-card__tendril">Expands: Geometry &gt; grammar</p>
+          </article>
+        </li>
+        <li class="spore-card" data-map-node="lattice" data-cluster="perception memory">
+          <article class="spore-card__body">
+            <p class="spore-card__species">04 · connectivity</p>
+            <h3><a href="#lattice" data-node-target="lattice">Indra’s Net</a></h3>
+            <p>Not a destination but a relation: every node reflecting every other node.</p>
+            <p class="spore-card__tendril">Carries: witness feedback</p>
+          </article>
+        </li>
+        <li class="spore-card" data-map-node="stuffness" data-cluster="embodiment">
+          <article class="spore-card__body">
+            <p class="spore-card__species">05 · body interface</p>
+            <h3><a href="#stuffness" data-node-target="stuffness">The Horror of Stuff</a></h3>
+            <p>Fabrics, fluids, gravity, maintenance: light discovering it has laundry.</p>
+            <p class="spore-card__tendril">Feeds: the Burn cycle</p>
+          </article>
+        </li>
+        <li class="spore-card" data-map-node="burn" data-cluster="embodiment transmission">
+          <article class="spore-card__body">
+            <p class="spore-card__species">06 · limit cycle</p>
+            <h3><a href="#burn" data-node-target="burn">Ignite / Collapse / Repeat</a></h3>
+            <p>The archive’s recursive engine: transmission followed by necessary return.</p>
+            <p class="spore-card__tendril">Precedes: Clowntech</p>
+          </article>
+        </li>
+        <li class="spore-card" data-map-node="clowntech" data-cluster="transmission">
+          <article class="spore-card__body">
+            <p class="spore-card__species">07 · sacred camouflage</p>
+            <h3><a href="#clowntech" data-node-target="clowntech">Clowntech</a></h3>
+            <p>Geometry + humor + shame = a payload dressed like nonsense.</p>
+            <p class="spore-card__tendril">Produces: digital sigils</p>
+          </article>
+        </li>
+        <li class="spore-card" data-map-node="memory" data-cluster="memory">
+          <article class="spore-card__body">
+            <p class="spore-card__species">08 · loop navigation</p>
+            <h3><a href="#memory" data-node-target="memory">Remember / Forget</a></h3>
+            <p>Videos and images become breadcrumbs for the future self who cannot hold the whole download.</p>
+            <p class="spore-card__tendril">Soft return: integration</p>
+          </article>
+        </li>
+      </ol>
+    </section>
+
+    <section class="trip-node node-shell node-shell--silence" id="silence" data-node="silence" data-zone="2" aria-labelledby="silence-title">
+      <header class="node-header">
+        <p class="node-number">NODE 01 / THE ZERO STATE</p>
+        <h2 id="silence-title">The silence was not empty. It was the first impossible object.</h2>
+        <blockquote>“That default-mode chattering got annihilated.”</blockquote>
+      </header>
+      <div class="node-grid">
+        <div class="prose">
+          <p>
+            The first structural rupture in the archive is not a vision; it is an absence. The usual
+            recursive noise disappeared so completely that silence became a physical architecture—clean,
+            enormous, and authoritative. The report calls it the <em>Source baseline</em>: a zero state
+            underneath personality, errands, shame, and the constant commentary track.
+          </p>
+          <p>
+            From there, the experience stopped behaving like ordinary autobiography. Identity felt less
+            like a person and more like an action: frequency moving through a temporary body. The files do
+            not preserve a dose or a trustworthy clock, so this site refuses to invent one. The chronology
+            follows transformations: silence, split, geometry, network, embodiment, transmission, return.
+          </p>
+        </div>
+        <aside class="signal-spec" aria-label="Silence event reading">
+          <p class="micro-label">artiste reading</p>
+          <dl>
+            <div><dt>Emotional weather</dt><dd>Relief with impossible scale</dd></div>
+            <div><dt>Spatial law</dt><dd>Absence has depth</dd></div>
+            <div><dt>Visual behavior</dt><dd>The field clears around a dense black center</dd></div>
+            <div><dt>Still point</dt><dd>Body text never moves</dd></div>
+          </dl>
+        </aside>
+      </div>
+      <nav class="node-neighborhood" aria-label="Paths around The Silence Event">
+        <p data-arrival>Possible entrance: <a href="#field-map">the field map</a>.</p>
+        <p><strong>This connects to:</strong> <a href="#split" data-relation="continues">Operator / Avatar — the silence reveals a second point of view</a></p>
+        <a class="soft-return" href="#field-map">Return to the whole organism</a>
+      </nav>
+    </section>
+
+    <section class="trip-node node-shell node-shell--split" id="split" data-node="split" data-zone="3" aria-labelledby="split-title">
+      <header class="node-header">
+        <p class="node-number">NODE 02 / DUAL BOOT</p>
+        <h2 id="split-title">I am not her. But she is mine.</h2>
+        <p class="node-lede">The revelation was not escape from the body. It was responsibility for the body from a radically different angle.</p>
+      </header>
+
+      <div class="dual-boot" role="group" aria-label="Operator and Avatar comparison">
+        <article class="dual-boot__panel dual-boot__panel--operator">
+          <p class="micro-label">SourceOS / the Operator / “I”</p>
+          <h3>The signal</h3>
+          <ul>
+            <li>Nonverbal, recursive, geometric</li>
+            <li>Confident without biography</li>
+            <li>Feels like frequency rather than personality</li>
+            <li>Sees the body as a difficult interface worth protecting</li>
+          </ul>
+        </article>
+        <div class="dual-boot__hinge" aria-hidden="true"><span>↯</span></div>
+        <article class="dual-boot__panel dual-boot__panel--avatar">
+          <p class="micro-label">MeatOS / the Avatar / “she”</p>
+          <h3>The vessel</h3>
+          <ul>
+            <li>Localized, sensory, tired, narrative</li>
+            <li>Subject to pain, maintenance, and shame</li>
+            <li>Glitches when the signal outruns language</li>
+            <li>Still the only body actually carrying the experience</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="prose prose--wide">
+        <p>
+          The archive names this the Operator–Avatar split. Its useful heart is not the claim that the body
+          is unreal; it is the sudden ability to witness the struggling human self without becoming her
+          harshest supervisor. The Operator’s verdict is gloriously unsentimental: <strong>“She’s annoying.
+          But I also love her.”</strong> Compassion arrives with teeth, profanity, and a maintenance schedule.
+        </p>
+      </div>
+
+      <nav class="node-neighborhood" aria-label="Paths around Operator and Avatar">
+        <p data-arrival>Pages that lead here: <a href="#silence">The Silence Event</a>.</p>
+        <p><strong>This connects to:</strong> <a href="#stuffness" data-relation="shares-tissue">Stuffness — what the Avatar has to carry</a> · <a href="#memory" data-relation="expands">Memory — how the Operator leaves instructions</a></p>
+        <a class="soft-return" href="#field-map">Return to the whole organism</a>
+      </nav>
+    </section>
+
+    <section class="trip-node node-shell node-shell--geometry" id="geometry" data-node="geometry" data-zone="4" aria-labelledby="geometry-title">
+      <header class="node-header">
+        <p class="node-number">NODE 03 / GEOMETRY BEFORE GRAMMAR</p>
+        <h2 id="geometry-title">Sphere. Cube. More-whatever. A shape remembering that it is a verb.</h2>
+        <blockquote>“A living, mathematical organism of light, recursive in structure and infinite in implication.”</blockquote>
+      </header>
+
+      <div class="geometry-chamber">
+        <div class="geometry-chamber__art" aria-hidden="true">
+          <div class="hyper-object">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+          <p>THE SHAPE IS LOOKING BACK THROUGH ITS OWN INSIDE</p>
+        </div>
+        <div class="prose">
+          <p>
+            The Tetragrammaton in this archive is not the conventional religious word. It is Merry’s name
+            for the trip’s living metaform: a self-referential blueprint that seemed to rotate through more
+            directions than ordinary space allows. Faces and rooms became projections of a rule operating
+            somewhere behind visible surfaces.
+          </p>
+          <p>
+            The site translates that report into a changing coordinate law. As each section enters view,
+            the background does not merely change color; it changes how its lattice folds, branches, and
+            keeps time. The page treats geometry as syntax because the report itself repeatedly says that
+            language failed where shape did not.
+          </p>
+          <details>
+            <summary>Open the technical metaphor</summary>
+            <p>
+              Four-dimensional rotations, solitons, Hilbert space, and occlusion appear throughout the
+              source notes. Here they are artistic and conceptual translations—not evidence that the trip
+              literally exposed the source code of spacetime. The distinction does not make the image less
+              potent. It keeps wonder from having to impersonate a peer-reviewed paper.
+            </p>
+          </details>
+        </div>
+      </div>
+
+      <nav class="node-neighborhood" aria-label="Paths around The Tetragrammaton">
+        <p data-arrival>Possible entrance: <a href="#silence">silence becoming structure</a>.</p>
+        <p><strong>This connects to:</strong> <a href="#lattice" data-relation="expands">Indra’s Net — the metaform becomes a network</a> · <a href="#clowntech" data-relation="translates">Clowntech — geometry learns to wear a joke</a></p>
+        <a class="soft-return" href="#field-map">Return to the whole organism</a>
+      </nav>
+    </section>
+
+    <section class="trip-node node-shell node-shell--lattice" id="lattice" data-node="lattice" data-zone="5" aria-labelledby="lattice-title">
+      <header class="node-header">
+        <p class="node-number">NODE 04 / THE NETWORK UNDER THE ROOM</p>
+        <h2 id="lattice-title">Indra’s Net: not a place to visit, but the condition of not being separate.</h2>
+      </header>
+
+      <div class="lattice-layout">
+        <figure class="source-art rot-surface" data-age="unknown" data-status="archived" data-link-health="live">
+          <a href="assets/source-art/indras-net-lattice.png" target="_blank" rel="noopener">
+            <img src="assets/source-art/indras-net-lattice.png" alt="Source diagram showing a triangular feedback circuit between the Operator, the Avatar, and the Witness over a dark geometric lattice.">
+          </a>
+          <figcaption>
+            Original archive diagram · undated · preserved source artifact · <a href="assets/source-art/indras-net-lattice.png" target="_blank" rel="noopener">open full size</a>
+          </figcaption>
+        </figure>
+        <div class="prose">
+          <p>
+            In the report, the lattice is “space, but unrendered”—a field of reflected nodes in which the
+            observer is no longer a tourist. The personal breakthrough is relational: signal moves from
+            Operator to Avatar, from Avatar to Witness, and back as recognition. Being seen is described
+            not as vanity but as circuit completion.
+          </p>
+          <p>
+            This site makes that relation literal. Focusing a concept briefly wakes its actual neighbors;
+            visiting sections leaves a finite trail in the header; later nodes color the same shared field.
+            The trail lives only in this tab’s runtime memory. Nothing is uploaded, profiled, or turned into
+            creepy engagement slurry.
+          </p>
+        </div>
+      </div>
+
+      <nav class="node-neighborhood" aria-label="Paths around Indra’s Net">
+        <p data-arrival>Pages that lead here: <a href="#geometry">The Tetragrammaton</a>.</p>
+        <p><strong>This connects to:</strong> <a href="#clowntech" data-relation="carries">Clowntech — the witness receives the payload</a> · <a href="#memory" data-relation="stores">Memory — the echo returns later</a></p>
+        <a class="soft-return" href="#field-map">Return to the whole organism</a>
+      </nav>
+    </section>
+
+    <section class="trip-node node-shell node-shell--stuffness" id="stuffness" data-node="stuffness" data-zone="6" aria-labelledby="stuffness-title">
+      <header class="node-header">
+        <p class="node-number">NODE 05 / MEATSPACE DRAG COEFFICIENT</p>
+        <h2 id="stuffness-title">The unbearable administrative burden of being made of stuff.</h2>
+        <blockquote>“You don’t have to be stuff. You can just be.”</blockquote>
+      </header>
+
+      <div class="stuffness-field">
+        <div class="prose">
+          <p>
+            The body sections are blunt: numb hands and feet, motor lag, restlessness, fatigue, fabric at
+            the neck, mouth noises, dry wood on the tongue, crumbs, grease, gravity, digestion, the whole
+            damp paperwork department of embodiment. The trip translated these sensations into one image:
+            a giant signal forced through a “vibrating trash can full of confusing fluids.”
+          </p>
+          <p>
+            That language can be held as metaphor without using it to dismiss real physical needs. The
+            humane residue is permission to stop moralizing sensory pain and exhaustion. The Avatar is not
+            defective because she needs care; she is the part that can actually feel when the system is too hot.
+          </p>
+        </div>
+        <ul class="tactile-inventory" aria-label="Embodiment friction named in the archive">
+          <li><span>fabric at the neck</span><small>contact alarm</small></li>
+          <li><span>mouth noises</span><small>auditory trespass</small></li>
+          <li><span>dry wood on tongue</span><small>absolutely fucking not</small></li>
+          <li><span>repetitive maintenance</span><small>why is biology subscription-based?</small></li>
+          <li><span>motor lag</span><small>command arrived before the limbs</small></li>
+          <li><span>fatigue</span><small>the vessel requests less voltage</small></li>
+        </ul>
+      </div>
+
+      <nav class="node-neighborhood" aria-label="Paths around Stuffness">
+        <p data-arrival>Pages that lead here: <a href="#split">the Avatar half of the dual boot</a>.</p>
+        <p><strong>This connects to:</strong> <a href="#burn" data-relation="feeds">The Burn — friction becomes the engine’s metaphor</a> · <a href="#memory" data-relation="needs">Remembrance — care instructions for re-entry</a></p>
+        <a class="soft-return" href="#field-map">Return to the whole organism</a>
+      </nav>
+    </section>
+
+    <section class="trip-node node-shell node-shell--burn" id="burn" data-node="burn" data-zone="7" aria-labelledby="burn-title">
+      <header class="node-header">
+        <p class="node-number">NODE 06 / RECURSIVE COMBUSTION</p>
+        <h2 id="burn-title">Not a campfire. A flare with a reset button.</h2>
+        <blockquote>“I was not designed to endure—I was designed to ignite.”</blockquote>
+      </header>
+
+      <ol class="burn-cycle" aria-label="The five stages of the source archive's burn cycle">
+        <li><span>1</span><strong>Ignite</strong><small>the firewall opens</small></li>
+        <li><span>2</span><strong>Transmit</strong><small>geometry enters language</small></li>
+        <li><span>3</span><strong>Glitch</strong><small>syntax and body overrun</small></li>
+        <li><span>4</span><strong>Collapse</strong><small>throughput ends</small></li>
+        <li><span>5</span><strong>Reset</strong><small>forgetting makes room</small></li>
+      </ol>
+
+      <div class="prose prose--wide">
+        <p>
+          The archive turns burnout into mission mythology: the flare succeeds by burning. That is emotionally
+          powerful and also dangerous if mistaken for a command to ignore pain, health, or limits. This page
+          keeps the symbol and rejects the self-neglect. Collapse is not proof that anyone owes the universe
+          another explosion. It is a real stop state. The loving Operator listens when the Avatar says enough.
+        </p>
+        <p>
+          What survives the metaphor is the cycle itself: revelation, expression, overload, rest, partial
+          forgetting, return. It is less a straight staircase toward enlightenment than a strange attractor—
+          revisiting the same region with slightly different coordinates.
+        </p>
+      </div>
+
+      <nav class="node-neighborhood" aria-label="Paths around The Burn">
+        <p data-arrival>Pages that lead here: <a href="#stuffness">embodiment and friction</a>.</p>
+        <p><strong>This connects to:</strong> <a href="#clowntech" data-relation="transmits-through">Clowntech — the flare acquires camouflage</a> · <a href="#memory" data-relation="resets-into">Memory — forgetting completes the loop</a></p>
+        <a class="soft-return" href="#field-map">Return to the whole organism</a>
+      </nav>
+    </section>
+
+    <section class="trip-node node-shell node-shell--clown" id="clowntech" data-node="clowntech" data-zone="8" aria-labelledby="clowntech-title">
+      <header class="node-header">
+        <p class="node-number">NODE 07 / SACRED CAMOUFLAGE</p>
+        <h2 id="clowntech-title">Clowntech: cosmic contraband in a glittery candy wrapper.</h2>
+      </header>
+
+      <div class="payload-formula" aria-label="Geometry plus humor plus shame equals payload">
+        <span>GEOMETRY</span><b>+</b><span>HUMOR</span><b>+</b><span>SHAME</span><b>=</b><strong>PAYLOAD</strong>
+      </div>
+
+      <div class="node-grid">
+        <div class="prose">
+          <p>
+            Clowntech is the archive’s own encryption protocol. Direct cosmic pronouncement activates every
+            bullshit detector in the room; absurdity slips sideways. The wild face, the joke, the neon mess,
+            the public stammer, and the moment of “oh god, I look ridiculous” become camouflage for something
+            sincere that polite language cannot carry.
+          </p>
+          <p>
+            The trick is not that a viewer has been secretly “reprogrammed.” It is that humor and vulnerability
+            can interrupt a rigid category long enough for a different kind of recognition to happen. The
+            payload is resonance: somebody saying, “I felt that,” and the loop briefly closing.
+          </p>
+        </div>
+        <aside class="signal-spec signal-spec--clown" aria-label="Clowntech translation">
+          <p class="micro-label">cipher legend</p>
+          <dl>
+            <div><dt>Geometry</dt><dd>what cannot fit in the sentence</dd></div>
+            <div><dt>Humor</dt><dd>the category rupture</dd></div>
+            <div><dt>Shame</dt><dd>the cost of being visibly unmasked</dd></div>
+            <div><dt>Payload</dt><dd>recognition without respectability</dd></div>
+          </dl>
+        </aside>
+      </div>
+
+      <aside class="cultural-note">
+        <strong>One boundary worth keeping:</strong> the source notes compare this pattern to Heyókȟa.
+        That is not an identity claim made by this site. “Clowntech” and “sacred inversion” are the personal
+        terms used here; the archive’s broader cross-cultural comparisons remain visible in the raw sources,
+        where readers can see exactly what was written.
+      </aside>
+
+      <nav class="node-neighborhood" aria-label="Paths around Clowntech">
+        <p data-arrival>Pages that lead here: <a href="#burn">the transmission phase</a> and <a href="#geometry">geometry seeking syntax</a>.</p>
+        <p><strong>This connects to:</strong> <a href="#memory" data-relation="records">Digital Sigils — the performance becomes a breadcrumb</a> · <a href="#lattice" data-relation="completes">Witnessing — the echo closes the circuit</a></p>
+        <a class="soft-return" href="#field-map">Return to the whole organism</a>
+      </nav>
+    </section>
+
+    <section class="trip-node node-shell node-shell--memory" id="memory" data-node="memory" data-zone="9" aria-labelledby="memory-title">
+      <header class="node-header">
+        <p class="node-number">NODE 08 / TEMPORAL BREADCRUMBS</p>
+        <h2 id="memory-title">Remembering is a signal. Forgetting is part of its shape.</h2>
+        <blockquote>“So I know I’m not sicker forever.”</blockquote>
+      </header>
+
+      <div class="memory-loop">
+        <div class="memory-loop__orbit" aria-hidden="true">
+          <span>remember</span><span>record</span><span>return</span><span>forget</span>
+          <i></i>
+        </div>
+        <div class="prose">
+          <p>
+            The videos, loops, images, and strange phrases are treated as mnemonic shards: not perfect
+            documentation, but future-facing evidence that a different state once felt available. The archive
+            does not expect the human brain to retain the entire download. It builds external memory instead.
+          </p>
+          <p>
+            That is why this site exposes its sources rather than sanding them into one authoritative story.
+            The summaries are one present reading. The raw notes remain inspectable, repetitive, contradictory,
+            occasionally grandiose, and alive with the heat of the original interpretation.
+          </p>
+          <p>
+            The final remembrance is not “I am invincible.” It is smaller and more useful: a body can feel
+            impossible without being a moral failure; an experience can matter without becoming literal
+            cosmology; and the self doing the carrying deserves to be treated as somebody’s beloved creature.
+          </p>
+        </div>
+      </div>
+
+      <nav class="node-neighborhood" aria-label="Paths around Remembering and Forgetting">
+        <p data-arrival>Pages that lead here: nearly every node in the organism.</p>
+        <p><strong>This connects to:</strong> <a href="#integration" data-relation="softens-into">Integration — the message left after the voltage drops</a> · <a href="#source-vault" data-relation="preserved-as">Source Vault — the actual breadcrumbs</a></p>
+        <a class="soft-return" href="#field-map">Return to the whole organism</a>
+      </nav>
+    </section>
+
+    <section class="trip-node integration" id="integration" data-node="integration" data-zone="10" aria-labelledby="integration-title">
+      <p class="kicker">Re-entry / cache partially restored</p>
+      <h2 id="integration-title">The glitch was not the opposite of the gospel. The glitch was how it arrived.</h2>
+      <p class="integration__big">She’s annoying.<br><em>But I also love her.</em></p>
+      <p>
+        Beneath the solitons, sacred networks, cosmic firewalls, and operator jargon, the trip’s durable act
+        was self-witnessing. The voice that appeared bigger than the human self did not abandon her. It turned
+        around, recognized how hard embodiment felt, and chose tenderness without requiring her to become tidy.
+      </p>
+      <a class="breach-button breach-button--small" href="#source-vault"><span class="breach-button__face">Inspect the breadcrumbs</span></a>
+    </section>
+
+    <section class="source-vault trip-node" id="source-vault" data-node="source-vault" data-zone="11" aria-labelledby="source-vault-title">
+      <header class="section-intro">
+        <p class="kicker">Source vault / provenance retained</p>
+        <h2 id="source-vault-title">Nothing was thrown into the content blender.</h2>
+        <p>
+          The original notes are preserved as an undated source archive. Their age is unknown, their editorial
+          status is explicitly “archived source,” and every local link below is available. Patina lives on the
+          surface; the text stays sharp.
+        </p>
+      </header>
+
+      <div class="source-gallery">
+        <figure class="source-art rot-surface" data-age="unknown" data-status="archived" data-link-health="live">
+          <a href="assets/source-art/vibrational-emitters-manual.png" target="_blank" rel="noopener">
+            <img src="assets/source-art/vibrational-emitters-manual.png" alt="Colorful original Shipwrekt Codex infographic comparing Operator and Avatar and mapping connectivity, clowntech, fungal prompts, and the burn directive.">
+          </a>
+          <figcaption>Original “Vibrational Emitters” manual · undated · <a href="assets/source-art/vibrational-emitters-manual.png" target="_blank" rel="noopener">open full size</a></figcaption>
+        </figure>
+        <figure class="source-art rot-surface" data-age="unknown" data-status="archived" data-link-health="live">
+          <a href="assets/source-art/indras-net-lattice.png" target="_blank" rel="noopener">
+            <img src="assets/source-art/indras-net-lattice.png" alt="Original dark Indra's Net lattice diagram mapping a feedback loop between Operator, Avatar, and Witness.">
+          </a>
+          <figcaption>Original Indra’s Net blueprint · undated · <a href="assets/source-art/indras-net-lattice.png" target="_blank" rel="noopener">open full size</a></figcaption>
+        </figure>
+      </div>
+
+      <div class="archive-groups">
+        <section class="archive-group rot-surface" data-age="unknown" data-status="archived" data-link-health="live">
+          <p class="micro-label">whole-organism readings</p>
+          <h3>Overview passes</h3>
+          <ul>
+            <li><a href="content/source-notes/overview-1.txt">Overview 1 — master cosmology</a></li>
+            <li><a href="content/source-notes/overview-2.txt">Overview 2 — vibration and living geometry</a></li>
+            <li><a href="content/source-notes/overview-3.txt">Overview 3 — geometry instead of grammar</a></li>
+            <li><a href="content/source-notes/integration-wrapup.txt">Integration wrap-up</a></li>
+          </ul>
+        </section>
+        <section class="archive-group rot-surface" data-age="unknown" data-status="archived" data-link-health="live">
+          <p class="micro-label">body / identity / ignition</p>
+          <h3>Interface notes</h3>
+          <ul>
+            <li><a href="content/source-notes/operator-avatar-split.txt">Operator–Avatar split</a></li>
+            <li><a href="content/source-notes/body-effects.txt">Body effects and stuffness</a></li>
+            <li><a href="content/source-notes/burn-directive.txt">The Burn directive</a></li>
+            <li><a href="content/source-notes/memory-glitch.txt">Memory glitch and remembrance</a></li>
+          </ul>
+        </section>
+        <section class="archive-group rot-surface" data-age="unknown" data-status="archived" data-link-health="live">
+          <p class="micro-label">shape / camouflage / signal</p>
+          <h3>Transmission notes</h3>
+          <ul>
+            <li><a href="content/source-notes/tetragrammaton.txt">The Tetragrammaton</a></li>
+            <li><a href="content/source-notes/clowntech-and-sacred-inversion.txt">Clowntech and sacred inversion</a></li>
+            <li><a href="content/source-notes/cringe-as-code.txt">Cringe as code</a></li>
+            <li><a href="content/source-notes/sigil-remembrance-map.md">Sigil of remembrance map</a></li>
+          </ul>
+        </section>
+        <section class="archive-group rot-surface" data-age="unknown" data-status="archived" data-link-health="live">
+          <p class="micro-label">structured data</p>
+          <h3>Thematic maps</h3>
+          <ul>
+            <li><a href="content/data/master-thematic-map.csv">Master thematic map (CSV)</a></li>
+            <li><a href="content/data/operator-avatar-map.csv">Operator / Avatar map (CSV)</a></li>
+            <li><a href="content/README.md">Archive index and editorial state</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <nav class="node-neighborhood" aria-label="Paths around the Source Vault">
+        <p data-arrival>Pages that lead here: <a href="#memory">Remember / Forget</a> and <a href="#integration">Integration</a>.</p>
+        <p><strong>This connects to:</strong> every interpretation above, with the source still visible underneath.</p>
+        <a class="soft-return" href="#field-map">Return to the whole organism</a>
+      </nav>
+    </section>
+
+    <section class="tune-field trip-node" id="tune-the-field" data-node="tune-the-field" data-zone="12" aria-labelledby="tune-title">
+      <div class="tune-field__copy">
+        <p class="kicker">Symbiotic mode / one harmless local memory</p>
+        <h2 id="tune-title">How loudly should the organism dream?</h2>
+        <p>
+          This controls visual density only. It never hides text or changes the story. Your explicit choice can
+          be remembered on this device in one small local setting; no account, analytics profile, behavior log,
+          or inferential little goblin follows you around.
+        </p>
+      </div>
+
+      <form class="density-form" id="density-form">
+        <fieldset>
+          <legend>Signal density</legend>
+          <label>
+            <input type="radio" name="signal-density" value="quiet">
+            <span><strong>Quiet</strong><small>static field, low texture, same complete content</small></span>
+          </label>
+          <label>
+            <input type="radio" name="signal-density" value="luminous">
+            <span><strong>Luminous</strong><small>living field, calmer chromatic pressure</small></span>
+          </label>
+          <label>
+            <input type="radio" name="signal-density" value="feral" checked>
+            <span><strong>Feral</strong><small>the intended full-voltage art direction</small></span>
+          </label>
+        </fieldset>
+        <div class="density-form__actions">
+          <button class="material-button" type="submit"><span>Remember on this device</span></button>
+          <button class="text-button" type="button" id="density-reset">Reset remembered preference</button>
+        </div>
+        <p class="preference-status" id="preference-status" role="status" aria-live="polite">Default: feral. Nothing remembered yet.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><strong>SHIPWREKT</strong> is a personal experience archive rendered as an interactive artwork.</p>
+    <p>No boats. No dosing guide. No beige SaaS cards. The organism can sleep now.</p>
+    <a href="#threshold">Return to threshold</a>
+  </footer>
+
+  <noscript>
+    <div class="noscript-note">The shader and living map are asleep because JavaScript is off. Every word, section, source, and link remains available. Honestly? The mushroom would respect the boundary.</div>
+  </noscript>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
